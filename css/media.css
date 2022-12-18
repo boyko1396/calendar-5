@@ -52,6 +52,9 @@
         height: auto !important;
         display: block !important;
     }
+    .preloader__logo-wrap {
+        width: 80px;
+    }
     .scroll-link__icon-wrap {
         width: 36px;
         max-width: 36px;
