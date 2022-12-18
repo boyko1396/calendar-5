@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
 <meta name="description" content="Scandalous charity campaign to fund walkie-takies for Armed Forces of Ukraine. Donate and get 'Uncensored' calendar from Channel 5 as a gift">
 <title>Charity campaign from 5th channel - Uncensored calendar</title>
-<link href="./css/style.css?v=533266263" type="text/css" rel="stylesheet">
-<link href="./css/jquery.fullPage.min.css?v=533266263" type="text/css" rel="stylesheet">
-<link href="./css/media.css?v=533266263" type="text/css" rel="stylesheet">
+<link href="./css/style.css?v=426156746" type="text/css" rel="stylesheet">
+<link href="./css/jquery.fullPage.min.css?v=426156746" type="text/css" rel="stylesheet">
+<link href="./css/media.css?v=426156746" type="text/css" rel="stylesheet">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
@@ -22,20 +22,34 @@
 
 <!-- root BEGIN -->
 <div id="root">
+  <!-- preloader BEGIN -->
+  <div id="preloader" class="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo-wrap">
+        <img class="preloader__logo" src="images/logo.svg" alt="preloader">
+      </div>
+    </div>
+  </div>
+  <!-- preloader END -->
+  <a href="#intro" class="js-scroll-up scroll-up main-scroll-up is-hidden">
+    <svg class="icon scroll-up__icon">
+      <use xlink:href="images/sprite.svg#arrow-type-1"></use>
+    </svg>
+  </a>
   <!-- header BEGIN -->
   <header class="header">
     <div class="container header__container">
       <a href="https://www.5.ua/" class="header__logo">
-        <img src="images/logo.png" alt="logo 5 chanel">
+        <img src="images/logo.svg" alt="logo 5 chanel">
       </a>
-      <button type="button" class="js-btn-nav header-toggle header__toggle">
-        <svg class="icon header-toggle__icon">
+      <button type="button" class="js-btn-nav btn-toggle header__toggle">
+        <svg class="icon btn-toggle__icon">
           <use xlink:href="images/sprite.svg#btn-toggle"></use>
         </svg>
       </button>
       <nav class="header-nav header__nav">
-        <button type="button" class="js-btn-nav header-toggle header-nav__close">
-          <svg class="icon header-toggle__icon">
+        <button type="button" class="js-btn-nav btn-toggle header-nav__close">
+          <svg class="icon btn-toggle__icon">
             <use xlink:href="images/sprite.svg#close"></use>
           </svg>
         </button>
@@ -72,7 +86,7 @@
       </picture>
       <div class="container intro__container">
         <h1 class="intro__title">The "Uncensored" calendar</h1>
-        <a href="#info" class="scroll-link intro__link" data-menuanchor="section-info">
+        <a href="#info" class="scroll-link intro__link">
           <span class="scroll-link__icon-wrap">
             <svg class="icon scroll-link__icon">
               <use xlink:href="images/sprite.svg#arrow-type-1"></use>
@@ -122,15 +136,15 @@
               </picture>
               <ol class="list-counter section-content__list-counter">
                 <li>
-                  Donate 40 or more Euro / USD
+                  Donate 57 or more Euro / USD
                   <ul>
                     <li>via <strong><a href="https://send.monobank.ua/jar/5AEPyNCvkG">credit card, Google Pay, Apple Pay</a></strong></li>
                     <li>via Paypal: paypal@5.ua. Please add the note "On the walkie-talkie"</li>
-                    <li class="block-hidden">via wire transfer. IBAN: …</li>
+                    <li>via <strong><a href="#method-modal" class="js-btn-method-modal">SEPA</a></strong></li>
                   </ul>
                 </li>
                 <li>Fill out your address and contact details <strong><a href="https://forms.gle/CLEQb2pTutKR4T7L7">in the order form</a></strong> and attach a sectionshot of your donation receipt.</li>
-                <li>Pick up the calendar from your local post office. Please note that the delivery price will be paid by the receiver.</li>
+                <li>Pick up the calendar from your local post office.</li>
               </ol>
             </div>
           </div>
@@ -198,13 +212,13 @@
             <a href="#info">Donate</a>
           </li>
           <li>
-            <a href="https://www.5.ua/about/kontakty/">About US</a>
+            <a href="https://en.m.wikipedia.org/wiki/5_Kanal">About US</a>
           </li>
           <li>
             <a href="https://www.5.ua/live/">TV</a>
           </li>
           <li>
-            <a href="https://www.5.ua/novyny/">News</a>
+            <a href="https://youtube.com/playlist?list=PL5eQ15vxDEVwkccaP4LgMcR06ix_xI0tg">News</a>
           </li>
         </ul>
         <div class="sc-block footer__sc-block">
@@ -248,12 +262,61 @@
     </footer>
     <!-- footer END -->
   </main>
+  <!-- method-modal BEGIN -->
+  <div class="method-modal">
+    <button type="button" class="js-btn-method-modal btn-toggle method-modal__close">
+      <svg class="icon btn-toggle__icon">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="method-modal__body">
+      <ul class="method-modal__list">
+        <li class="method-item">
+          <p class="method-item__title">
+            <strong>Account number (IBAN):</strong>
+          </p>
+          <p class="method-item__text">GB96CLJU00997180080619</p>
+        </li>
+        <li class="method-item">
+          <p class="method-item__title">
+            <strong>BIC:</strong>
+          </p>
+          <p class="method-item__text">CLJUGB21</p>
+        </li>
+        <li class="method-item">
+          <p class="method-item__title">
+            <strong>Account Holder Name:</strong>
+          </p>
+          <p class="method-item__text">HERASYMOVA IRYNA</p>
+        </li>
+        <li class="method-item">
+          <p class="method-item__title">
+            <strong>TIN (Taxpayer Identification Number):</strong>
+          </p>
+          <p class="method-item__text">3006616886</p>
+        </li>
+        <li class="method-item">
+          <p class="method-item__title">
+            <strong>Bank:</strong>
+          </p>
+          <p class="method-item__text">Clear Junction Limited</p>
+        </li>
+        <li class="method-item">
+          <p class="method-item__title">
+            <strong>Bank address:</strong>
+          </p>
+          <p class="method-item__text">15 Kingsway, London WC2B 6UN</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- method-modal END -->
 </div>
 <!-- root END -->
 
-<script type="text/javascript" src="./js/jquery-3.6.0.min.js?v=533266263"></script>
-<script type="text/javascript" src="./js/jquery.fullPage.min.js?v=533266263"></script>
-<script type="text/javascript" src="./js/main.js?v=533266263"></script>
+<script type="text/javascript" src="./js/jquery-3.6.0.min.js?v=426156746"></script>
+<script type="text/javascript" src="./js/jquery.fullPage.min.js?v=426156746"></script>
+<script type="text/javascript" src="./js/main.js?v=426156746"></script>
 
 </body>
 </html>
