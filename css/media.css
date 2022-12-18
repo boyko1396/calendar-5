@@ -15,7 +15,7 @@
 
 @media (min-width: 1200px) {
     .scroll-up:hover {
-        color: var(--color-accent);
+        opacity: 1;
     }
     .method-modal__close:hover {
         color: var(--color-accent);
