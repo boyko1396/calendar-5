@@ -566,14 +566,16 @@ h6,
 }
 
 .section-content__text a {
+    color: var(--color-accent);
+    box-shadow: 0 1px 0 transparent;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
 }
 
 .section-content__text a:hover {
-    color: var(--color-accent);
     text-decoration: none;
+    box-shadow: 0 1px 0 currentColor;
 }
 
 .text-accent {
@@ -1047,8 +1049,13 @@ body.is-menu-opened .header--theme-white .header-nav__link {
     padding: 5rem 0;
 }
 
-.info__content a:hover {
+.info__content a {
     color: var(--color-accent);
+    box-shadow: 0 1px 0 transparent;
+}
+
+.info__content a:hover {
+    box-shadow: 0 1px 0 currentColor;
 }
 
 /* meta-appeal
