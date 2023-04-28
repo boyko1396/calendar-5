@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
 <meta name="description" content="Scandalous charity campaign to fund walkie-takies for Armed Forces of Ukraine. Donate and get 'Uncensored' calendar from Channel 5 as a gift">
-<title>Charity campaign from 5th channel - Uncensored calendar</title>
-<link href="./css/style.css?v=13626234236" type="text/css" rel="stylesheet">
-<link href="./css/jquery.fullPage.min.css?v=13626234236" type="text/css" rel="stylesheet">
-<link href="./css/media.css?v=13626234236" type="text/css" rel="stylesheet">
+<title>Charity campaign from channel 5 - Uncensored calendar</title>
+<link href="./css/style.css?v=5624523347" type="text/css" rel="stylesheet">
+<link href="./css/jquery.fullPage.min.css?v=5624523347" type="text/css" rel="stylesheet">
+<link href="./css/slick.min.css?v=5624523347" type="text/css" rel="stylesheet">
+<link href="./css/media.css?v=5624523347" type="text/css" rel="stylesheet">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
@@ -17,9 +18,6 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43467952-1"></script>
 <script>
@@ -29,6 +27,44 @@
 
   gtag('config', 'UA-43467952-1');
 </script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1324930834925002');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1324930834925002&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Twitter conversion tracking base code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','oddpi');
+</script>
+<!-- End Twitter conversion tracking base code -->
+
+<script>
+  window.onFormClick = function(url) {
+    twq('event', 'tw-oddpi-oddvh');
+    fbq('trackCustom', 'orderformclick', {url});
+    gtag('event','orderformclick', {});
+
+  }
+</script>
+</head>
+<body>
 
 <!-- root BEGIN -->
 <div id="root">
@@ -43,7 +79,7 @@
   <!-- preloader END -->
   <a href="#intro" class="js-scroll-up scroll-up main-scroll-up is-hidden">
     <svg class="icon scroll-up__icon">
-      <use xlink:href="images/sprite.svg#arrow-type-2"></use>
+      <use xlink:href="images/sprite.svg#arrow-type-2?v=2"></use>
     </svg>
   </a>
   <!-- header BEGIN -->
@@ -54,13 +90,13 @@
       </a>
       <button type="button" class="js-btn-nav btn-toggle header__toggle">
         <svg class="icon btn-toggle__icon">
-          <use xlink:href="images/sprite.svg#btn-toggle"></use>
+          <use xlink:href="images/sprite.svg#btn-toggle?v=2"></use>
         </svg>
       </button>
       <nav class="header-nav header__nav">
         <button type="button" class="js-btn-nav btn-toggle header-nav__close">
           <svg class="icon btn-toggle__icon">
-            <use xlink:href="images/sprite.svg#close"></use>
+            <use xlink:href="images/sprite.svg#close?v=2"></use>
           </svg>
         </button>
         <ul class="header-nav__list">
@@ -69,6 +105,9 @@
           </li>
           <li class="header-nav__item">
             <a href="#meta-appeal" class="js-header-nav-link header-nav__link">Charity campaign</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#gifts" class="js-header-nav-link header-nav__link">Gifts</a>
           </li>
           <li class="header-nav__item header-nav__item--pull-right">
             <a href="https://en.m.wikipedia.org/wiki/5_Kanal" class="js-header-nav-link header-nav__link">About us</a>
@@ -95,14 +134,14 @@
         <img src="images/intro-calendar-mobile.jpg" alt="The 'Uncensored' calendar">
       </picture>
       <div class="container intro__container">
-        <h1 class="intro__title">The "Uncensored" calendar</h1>
+        <h1 class="intro__title">The "Uncensored" campaign</h1>
         <a href="#info" class="scroll-link intro__link">
           <span class="scroll-link__icon-wrap">
             <svg class="icon scroll-link__icon">
-              <use xlink:href="images/sprite.svg#arrow-type-1"></use>
+              <use xlink:href="images/sprite.svg#arrow-type-1?v=2"></use>
             </svg>
           </span>
-          <span class="scroll-link__title"><strong class="text-accent">Donate</strong><br>and get the calendar</span>
+          <span class="scroll-link__title"><strong class="text-accent">Donate</strong><br>and get the gift</span>
         </a>
       </div>
     </section>
@@ -121,7 +160,7 @@
               <h2 class="section-content__title">A Cheeky Charity campaign: Channel 5’s “Uncensored” Calendar</h2>
               <div class="content section-content__text">
                 <p>In honour of ‘The Day of Ukrainian Armed Forces’, Channel 5 released a scandalously unflinching calendar, consensually featuring its own employees.</p>
-                <p>The project aims to collect at least a million hryvnias to purchase two-way-radios for Ukrainian Armed Forces.</p>
+                <p>The project has already collected 4.5 million hryvnias. All funds are spent to purchase two-way-radios for Ukrainian Armed Forces. 130 items has already been sent. Campaign is running.</p>
               </div>
             </div>
           </div>
@@ -135,33 +174,242 @@
         <div class="row info__row">
           <div class="row__col info__col info__col--picture">
             <picture class="info__picture">
-              <img src="images/info-img-desktop.png" alt="Want the physical 'Uncensored' calendar from Channel 5? Take three steps">
+              <img src="images/info-img-desktop.png?v=2" alt="Want to get the 'Uncensored' gift from Channel 5?">
             </picture>
           </div>
           <div class="row__col info__col info__col--content">
             <div class="section-content info__content">
-              <h2 class="section-content__title">Want to get the "Uncensored" calendar from Channel 5?</h2>
+              <h2 class="section-content__title">Want to get the "Uncensored" gift from Channel&nbsp;5?</h2>
               <picture class="info__picture-mobile">
-                <img src="images/info-img-mobile.png" alt="Want the physical 'Uncensored' calendar from Channel 5? Take three steps">
+                <img src="images/info-img-mobile.png?v=2" alt="Want to get the 'Uncensored' gift from Channel 5?">
               </picture>
               <ol class="list-counter section-content__list-counter">
                 <li>
-                  Donate 57 or more Euro / USD
+                  Donate 80 or more Euro / USD
                   <ul>
                     <li>via <strong><a href="https://send.monobank.ua/jar/5AEPyNCvkG">credit card, Google Pay, Apple Pay</a></strong></li>
                     <li>via Paypal: paypal@5.ua. Please add the note "On the walkie-talkie"</li>
                     <li>via <strong><a href="#method-modal" class="js-btn-method-modal">SEPA</a></strong></li>
                   </ul>
                 </li>
-                <li>Fill out your address and contact details in <strong><a href="https://forms.gle/CLEQb2pTutKR4T7L7">the order form</a></strong> and attach the screenshot of your donation confirmation screen</li>
-                <li>Pick up the calendar from your local post office.</li>
+                <li>Select the gift(s) you would like to get as our gratitude in return.</li>
+                <li>Fill out your address, contact details in <strong><a onclick="onFormClick('https://forms.gle/CLEQb2pTutKR4T7L7')" href="https://forms.gle/CLEQb2pTutKR4T7L7">the order form</a></strong>. Attach the screenshot of your donation confirmation screen. List the gift(s) in the comment field.</li>
+                <li>Pick up the parcel at your local post office.</li>
               </ol>
+              <div class="content section-content__description">
+                <p>If you are lacking payment methods or experiencing some issues with the form above please email us at <a href="mailto:lyst@5.ua">lyst@5.ua</a></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- info END -->
+    <!-- gifts-section BEGIN -->
+    <section class="section section--theme-gray gifts-section" data-anchor="gifts">
+      <div class="container gifts-section__container">
+        <div class="section-content gifts-section__content">
+          <h2 class="section-content__title">Gifts</h2>
+          <div class="gifts-section__control">
+            <div class="gifts-section__dots"></div>
+          </div>
+        </div>
+        <div class="gifts-slider gifts-section__slider">
+          <div class="gifts-slider__inner">
+            <div class="js-gifts-slider-init gifts-slider__el">
+              <div class="gifts-slider__slide gifts-slider__slide--width-50">
+                <article class="gift-card gift-card--md">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-1.jpg" alt="Gift Calendar" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Calendar</h3>
+                      <div class="content gift-card__text">
+                        <p>"No censorship" 2023 Wall Calendar. A2 format. Each of 12 months is placed its own page and represented by a nude body of 5th channel female employee with military equipment on them. Text descriptions are in both Ukrainian and English.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="gifts-slider__slide gifts-slider__slide--width-50">
+                <article class="gift-card gift-card--md">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-2.jpg" alt="Gift Watcher" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Watcher</h3>
+                      <div class="content gift-card__text">
+                        <p>Camouflage art style black/white photo, printed on natural cotton canvas. Size - 500*698cm. It can be placed on any surface, rolled, carry. The photo is part of “No censorship” collection that contents 10 pictures. Women on photos aren't models - they are Ukrainian 5th channel journalists.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="gifts-slider__slide gifts-slider__slide--width-50">
+                <article class="gift-card gift-card--md">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-3.jpg" alt="Gift Holster" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Holster</h3>
+                      <div class="content gift-card__text">
+                        <p>Camouflage art style black/white photo, printed on natural cotton canvas. Size - 500*637cm. It can be placed on any surface, rolled, carry. The photo is part of “No censorship” collection that contents 10 pictures. Women on photos aren't models - they are Ukrainian 5th channel journalists.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="gifts-slider__slide gifts-slider__slide--width-50">
+                <article class="gift-card gift-card--md">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-4.jpg" alt="Gift Camouflage" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Camouflage</h3>
+                      <div class="content gift-card__text">
+                        <p>Camouflage art style black/white photo, printed on natural cotton canvas. Size - 500*750cm. It can be placed on any surface, rolled, carry. The photo is part of “No censorship” collection that contents 10 pictures. Women on photos aren't models - they are Ukrainian 5th channel journalists.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="gifts-slider__slide gifts-slider__slide--width-100">
+                <article class="gift-card gift-card--xl">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-5.jpg" alt="Gift Capitan" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Capitan</h3>
+                      <div class="content gift-card__text">
+                        <p>Camouflage art style black/white photo, printed on natural cotton canvas. Size - 500*623cm. It can be placed on any surface, rolled, carry. The photo is part of “No censorship” collection that contents 10 pictures. Women on photos aren't models - they are Ukrainian 5th channel journalists.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="gifts-slider__slide gifts-slider__slide--width-50">
+                <article class="gift-card gift-card--md">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-6.jpg" alt="Gift Ammo" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Ammo</h3>
+                      <div class="content gift-card__text">
+                        <p>Camouflage art style black/white photo, printed on natural cotton canvas. Size - 500*623cm. It can be placed on any surface, rolled, carry. The photo is part of “No censorship” collection that contents 10 pictures. Women on photos aren't models - they are Ukrainian 5th channel journalists.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="gifts-slider__slide gifts-slider__slide--width-50">
+                <article class="gift-card gift-card--md">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-7.jpg" alt="Gift Ghillie" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Ghillie</h3>
+                      <div class="content gift-card__text">
+                        <p>Camouflage art style black/white photo, printed on natural cotton canvas. Size - 500*623cm. It can be placed on any surface, rolled, carry. The photo is part of “No censorship” collection that contents 10 pictures. Women on photos aren't models - they are Ukrainian 5th channel journalists.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="gifts-slider__slide gifts-slider__slide--width-100">
+                <article class="gift-card gift-card--md">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-8.jpg" alt="Gift Blood type" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Blood type</h3>
+                      <div class="content gift-card__text">
+                        <p>Camouflage art style black/white photo, printed on natural cotton canvas. Size - 500*623cm. It can be placed on any surface, rolled, carry. The photo is part of “No censorship” collection that contents 10 pictures. Women on photos aren't models - they are Ukrainian 5th channel journalists.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </xlv>
+              <div class="gifts-slider__slide gifts-slider__slide--width-50">
+                <article class="gift-card gift-card--md">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-9.jpg" alt="Gift Bullet" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Bullet</h3>
+                      <div class="content gift-card__text">
+                        <p>Camouflage art style black/white photo, printed on natural cotton canvas. Size - 500*623cm. It can be placed on any surface, rolled, carry. The photo is part of “No censorship” collection that contents 10 pictures. Women on photos aren't models - they are Ukrainian 5th channel journalists.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="gifts-slider__slide gifts-slider__slide--width-50">
+                <article class="gift-card gift-card--md">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-10.jpg" alt="Gift Spy" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Spy</h3>
+                      <div class="content gift-card__text">
+                        <p>Camouflage art style black/white photo, printed on natural cotton canvas. Size - 500*623cm. It can be placed on any surface, rolled, carry. The photo is part of “No censorship” collection that contents 10 pictures. Women on photos aren't models - they are Ukrainian 5th channel journalists.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="gifts-slider__slide gifts-slider__slide--width-100">
+                <article class="gift-card gift-card--xl">
+                  <div class="row gift-card__inner">
+                    <div class="row__col-6 gift-card__media">
+                      <picture class="img-cover gift-card__picture">
+                        <img src="images/gift-card-11.jpg" alt="Gift Strike face" class="gift-card__img">
+                      </picture>
+                    </div>
+                    <div class="row__col-6 gift-card__content">
+                      <h3 class="gift-card__title">Strike face</h3>
+                      <div class="content gift-card__text">
+                        <p>Camouflage art style black/white photo, printed on natural cotton canvas. Size - 500*623cm. It can be placed on any surface, rolled, carry. The photo is part of “No censorship” collection that contents 10 pictures. Women on photos aren't models - they are Ukrainian 5th channel journalists.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- gifts-section END -->
     <!-- meta-appeal BEGIN -->
     <section class="section section--theme-gray meta-appeal" data-anchor="meta-appeal">
       <div class="container meta-appeal__container">
@@ -198,13 +446,12 @@
           </div>
           <div class="help-section__list-col help-section__list-col--facebook">
             <div class="sc-card sc-card--facebook help-section__facebook">
-              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F5kanal%2Fposts%2Fpfbid023T3EAtRCbAmSEs9SrvSfbjKSAHRADVv1bkiiYGBWf5dXcJRhE3zV3KEtXAvMf1ajl&show_text=true&width=500" width="500" height="552" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F5kanal%2Fposts%2Fpfbid0aQuEvRXkH7rWetdchgD571CVJNjasaLqQ6KSB5Uy3BsqH2cofwofBW6LPXtde3Jnl&show_text=true&width=500" width="500" height="546" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
           </div>
           <div class="help-section__list-col help-section__list-col--twitter">
             <div class="sc-card sc-card--twitter help-section__twitter">
-              <blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-theme="dark"><p lang="uk" dir="ltr"><a href="https://twitter.com/hashtag/%D0%9A%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80?src=hash&amp;ref_src=twsrc%5Etfw">#Календар</a> 5 каналу, який тепер має і <a href="https://twitter.com/hashtag/%D0%97%D0%B0%D0%BB%D1%83%D0%B6%D0%BD%D0%B8%D0%B9?src=hash&amp;ref_src=twsrc%5Etfw">#Залужний</a>, можна отримати за донейт на рації для <a href="https://twitter.com/hashtag/%D0%97%D0%A1%D0%A3?src=hash&amp;ref_src=twsrc%5Etfw">#ЗСУ</a> тут: <a href="https://t.co/jYYQfNM3A2">https://t.co/jYYQfNM3A2</a><br><br>Слава Україні! <a href="https://t.co/596Dof1wqK">pic.twitter.com/596Dof1wqK</a></p>&mdash; 5 канал ✙🇺🇦 (@5channel) <a href="https://twitter.com/5channel/status/1602980777221885952?ref_src=twsrc%5Etfw">December 14, 2022</a></blockquote>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <blockquote class="twitter-tweet" data-theme="light"><p lang="en" dir="ltr">This tasteful, yet provocative photo shoot of journalists in support of the UA military created quite a scandal. Due to its buzz,they were able to generate 2.000.000 UAH to help the Armed Forces of <a href="https://twitter.com/hashtag/Ukraine?src=hash&amp;ref_src=twsrc%5Etfw">#Ukraine</a>. More photos <a href="https://t.co/xX60fvBAgc">https://t.co/xX60fvBAgc</a><a href="https://twitter.com/hashtag/UkrainerussiaWar%EF%B8%8F?src=hash&amp;ref_src=twsrc%5Etfw">#UkrainerussiaWar️</a> <a href="https://twitter.com/hashtag/UkraineWarNews?src=hash&amp;ref_src=twsrc%5Etfw">#UkraineWarNews</a> <a href="https://t.co/ujZO5MJQ9f">pic.twitter.com/ujZO5MJQ9f</a></p>&mdash; 5 канал ✙🇺🇦 (@5channel) <a href="https://twitter.com/5channel/status/1610262242238533632?ref_src=twsrc%5Etfw">January 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
         </div>
@@ -236,7 +483,7 @@
             <li class="sc-block__item">
               <a href="https://www.facebook.com/5kanal" class="sc-block__link">
                 <svg class="icon sc-block__icon">
-                  <use xlink:href="images/sprite.svg#sc-facebook"></use>
+                  <use xlink:href="images/sprite.svg#sc-facebook?v=2"></use>
                 </svg>
                 <span class="sc-block__title">Facebook</span>
               </a>
@@ -244,7 +491,7 @@
             <li class="sc-block__item">
               <a href="https://www.instagram.com/5kanal.ua/" class="sc-block__link">
                 <svg class="icon sc-block__icon">
-                  <use xlink:href="images/sprite.svg#sc-instagram"></use>
+                  <use xlink:href="images/sprite.svg#sc-instagram?v=2"></use>
                 </svg>
                 <span class="sc-block__title">Instagram</span>
               </a>
@@ -252,7 +499,7 @@
             <li class="sc-block__item">
               <a href="https://www.youtube.com/5channel" class="sc-block__link">
                 <svg class="icon sc-block__icon">
-                  <use xlink:href="images/sprite.svg#sc-youtube"></use>
+                  <use xlink:href="images/sprite.svg#sc-youtube?v=2"></use>
                 </svg>
                 <span class="sc-block__title">YouTube</span>
               </a>
@@ -260,7 +507,7 @@
             <li class="sc-block__item">
               <a href="https://twitter.com/5channel" class="sc-block__link">
                 <svg class="icon sc-block__icon">
-                  <use xlink:href="images/sprite.svg#sc-twitter"></use>
+                  <use xlink:href="images/sprite.svg#sc-twitter?v=2"></use>
                 </svg>
                 <span class="sc-block__title">Twitter</span>
               </a>
@@ -276,7 +523,7 @@
   <div class="method-modal">
     <button type="button" class="js-btn-method-modal btn-toggle method-modal__close">
       <svg class="icon btn-toggle__icon">
-        <use xlink:href="images/sprite.svg#close"></use>
+        <use xlink:href="images/sprite.svg#close?v=2"></use>
       </svg>
     </button>
     <div class="method-modal__body">
@@ -324,9 +571,10 @@
 </div>
 <!-- root END -->
 
-<script type="text/javascript" src="./js/jquery-3.6.0.min.js?v=13626234236"></script>
-<script type="text/javascript" src="./js/jquery.fullPage.min.js?v=13626234236"></script>
-<script type="text/javascript" src="./js/main.js?v=13626234236"></script>
+<script type="text/javascript" src="./js/jquery-3.6.0.min.js?v=5624523347"></script>
+<script type="text/javascript" src="./js/jquery.fullPage.min.js?v=5624523347"></script>
+<script type="text/javascript" src="./js/slick.min.js?v=5624523347"></script>
+<script type="text/javascript" src="./js/main.js?v=5624523347"></script>
 
 </body>
 </html>

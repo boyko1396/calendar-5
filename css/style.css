@@ -438,7 +438,8 @@ h6,
 }
 
 .sc-card--facebook {
-    padding: 0 0 110.4%;
+    background: var(--color-white);
+    padding: 0 0 109.2%;
 }
 
 .section--theme-gray {
@@ -453,6 +454,98 @@ h6,
 .section--theme-dark-light {
     background: var(--color-dark-light);
     color: var(--color-white);
+}
+
+.slick-arrow {
+    background: transparent;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    color: rgba(0,0,0,.5);
+    border: none;
+    border-radius: 0;
+    outline: none;
+    position: relative;
+    -webkit-transition: all .34s;
+    -o-transition: all .34s;
+    transition: all .34s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slick-arrow:before {
+    content: '';
+    position: absolute;
+    top: -1.2rem;
+    right: -1.2rem;
+    bottom: -1.2rem;
+    left: -1.2rem;
+}
+
+.slick-arrow--prev .slick-arrow__icon {
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+
+.slick-arrow--next {
+}
+
+.slick-arrow__icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.slick-dots {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style-type: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.slick-dots li {
+    margin: .8rem;
+    padding: 0;
+}
+
+.slick-dots li button {
+    background: transparent;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: block;
+    font-size: 0 !important;
+    color: rgba(0,0,0,.5);
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    outline: none;
+    position: relative;
+    -webkit-transition: all .34s;
+    -o-transition: all .34s;
+    transition: all .34s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slick-dots li button:before {
+    content: '';
+    position: absolute;
+    top: -.4rem;
+    right: -.4rem;
+    bottom: -.4rem;
+    left: -.4rem;
+}
+
+
+.slick-dots li.slick-active button {
+    background: currentColor;
 }
 
 .video-responsive {
@@ -492,7 +585,7 @@ h6,
 }
 
 .list-counter > li + li {
-    margin-top: 4.5rem;
+    margin-top: 3.8rem;
 }
 
 .list-counter > li:before {
@@ -567,7 +660,8 @@ h6,
 
 .section-content__text a {
     color: var(--color-accent);
-    box-shadow: 0 1px 0 transparent;
+    -webkit-box-shadow: 0 1px 0 transparent;
+            box-shadow: 0 1px 0 transparent;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
@@ -575,7 +669,23 @@ h6,
 
 .section-content__text a:hover {
     text-decoration: none;
-    box-shadow: 0 1px 0 currentColor;
+    -webkit-box-shadow: 0 1px 0 currentColor;
+            box-shadow: 0 1px 0 currentColor;
+}
+
+.section-content__description {
+    margin: 5rem 0 0 9rem;
+    font-size: 18px;
+    line-height: 1.22;
+}
+
+.section-content__description a {
+    color: var(--color-white);
+}
+
+.section-content__description a:hover {
+    color: var(--color-accent);
+    text-decoration: none;
 }
 
 .text-accent {
@@ -943,7 +1053,8 @@ body.is-menu-opened .header--theme-white .header-nav__link {
 .intro__picture img {
     position: absolute;
     top: 0;
-    object-position: center bottom;
+    -o-object-position: center bottom;
+       object-position: center bottom;
 }
 
 .intro__picture--mobile {
@@ -953,15 +1064,19 @@ body.is-menu-opened .header--theme-white .header-nav__link {
 .intro__picture--desktop img {
     height: 100%;
     left: 50%;
-    transform: translateX(-50%);
-    object-fit: contain;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .intro__picture--mobile img {
     width: 120%;
     height: 100%;
     left: -10%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .intro__container {
@@ -1051,11 +1166,125 @@ body.is-menu-opened .header--theme-white .header-nav__link {
 
 .info__content a {
     color: var(--color-accent);
-    box-shadow: 0 1px 0 transparent;
+    -webkit-box-shadow: 0 1px 0 transparent;
+            box-shadow: 0 1px 0 transparent;
 }
 
 .info__content a:hover {
-    box-shadow: 0 1px 0 currentColor;
+    -webkit-box-shadow: 0 1px 0 currentColor;
+            box-shadow: 0 1px 0 currentColor;
+}
+
+/* gifts-section
+=====================*/
+
+.gifts-section {
+}
+
+.gifts-section__container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.gifts-section__content {
+    text-align: center;
+}
+
+.gifts-section__slider {
+    padding-bottom: 8rem;
+}
+
+.gifts-section__control {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.gifts-section__control .slick-arrow {
+}
+
+.gifts-section__control .slick-arrow--prev {
+    margin-right: 1.5rem;
+}
+
+.gifts-section__control .slick-arrow--next {
+    margin-left: 1.5rem;
+}
+
+.gifts-slider__el {
+    margin: 0 var(--gap-);
+}
+
+.gifts-slider__slide {
+    min-height: 1px;
+    padding: 0 var(--gap);
+    outline: none;
+}
+
+.gifts-slider__slide--width-50 {
+    width: 87.7rem;
+}
+
+.gifts-slider__slide--width-100 {
+    width: 175.4rem;
+}
+
+.gifts-slider__slide--width-100 .gift-card {
+    max-width: 121rem;
+    margin: 0 auto;
+}
+
+.gift-card__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.gift-card__picture {
+    position: relative;
+    overflow: hidden;
+}
+
+.gift-card--md .gift-card__picture {
+    padding-bottom: 143.718592965%;
+}
+
+.gift-card--xl .gift-card__picture {
+    padding-bottom: 78.1%;
+}
+
+.gift-card__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.gift-card__title {
+    margin: 0 0 4rem;
+    font-weight: 500;
+    font-size: 3.6rem;
+}
+
+.gift-card__text {
+    line-height: 1.4;
 }
 
 /* meta-appeal

@@ -33,7 +33,7 @@ $(document).ready(function() {
     navigation: false,
     responsive: 1200,
     responsiveHeight: 680,
-    anchors: ['intro', 'about', 'info', 'meta-appeal', 'help-section', 'footer'],
+    anchors: ['intro', 'about', 'info', 'gifts', 'meta-appeal', 'help-section', 'footer'],
     afterLoad: function(anchorLink, afterIndex) {
       if (afterIndex == 1) {
         $('.js-scroll-up').addClass('is-hidden');
@@ -62,5 +62,28 @@ $(document).ready(function() {
         $('.header').removeClass('header--theme-white');
       };
     }
+  });
+
+  // slick slider init
+  $('.js-gifts-slider-init').slick({
+    slidesToScroll: 2,
+    adaptiveHeight: true,
+    arrows: true,
+    appendArrows: $('.gifts-section__control'),
+    infinite: true,
+    dots: true,
+    appendDots: $('.gifts-section__dots'),
+    variableWidth: true,
+    prevArrow: "<button type='button' class='slick-arrow slick-arrow--prev'><svg class='slick-arrow__icon'><use xlink:href='images/sprite.svg#arrow-type-3'></use></svg></button>",
+    nextArrow: "<button type='button' class='slick-arrow slick-arrow--next'><svg class='slick-arrow__icon'><use xlink:href='images/sprite.svg#arrow-type-3'></use></svg></button>",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 });
