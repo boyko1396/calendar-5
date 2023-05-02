@@ -14,6 +14,13 @@
 }
 
 @media (min-width: 1200px) {
+    .gifts-slider__inner--mobile,
+    .gifts-section__dots--mobile {
+        position: absolute;
+        left: -200vw;
+        pointer-events: none;
+        opacity: 0;
+    }
     .slick-arrow:hover,
     .slick-dots li button:hover {
         color: var(--color-accent);
@@ -369,8 +376,20 @@
         width: 8px;
         height: 8px;
     }
+    .gifts-slider__inner--desktop,
+    .gifts-section__dots--desktop {
+        position: absolute;
+        left: -200vw;
+        pointer-events: none;
+        opacity: 0;
+    }
     .gifts-section__slider {
         padding-bottom: 0;
+    }
+    .gifts-slider__card.gift-card--md {
+        max-width: 100vw;
+        -ms-flex-preferred-size: 100vw;
+            flex-basis: 100vw;
     }
 }
 

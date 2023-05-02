@@ -65,15 +65,15 @@ $(document).ready(function() {
   });
 
   // slick slider init
-  $('.js-gifts-slider-init').slick({
-    slidesToScroll: 2,
+  $('.js-gifts-slider-desktop-init').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
     adaptiveHeight: true,
     arrows: true,
     appendArrows: $('.gifts-section__control'),
     infinite: true,
     dots: true,
-    appendDots: $('.gifts-section__dots'),
-    variableWidth: true,
+    appendDots: $('.gifts-section__dots--desktop'),
     prevArrow: "<button type='button' class='slick-arrow slick-arrow--prev'><svg class='slick-arrow__icon'><use xlink:href='images/sprite.svg#arrow-type-3'></use></svg></button>",
     nextArrow: "<button type='button' class='slick-arrow slick-arrow--next'><svg class='slick-arrow__icon'><use xlink:href='images/sprite.svg#arrow-type-3'></use></svg></button>",
     responsive: [
@@ -81,9 +81,19 @@ $(document).ready(function() {
         breakpoint: 1200,
         settings: {
           arrows: false,
-          slidesToScroll: 1
+          variableWidth: true
         }
       }
     ]
+  });
+
+  $('.js-gifts-slider-mobile-init').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    arrows: false,
+    infinite: true,
+    dots: true,
+    appendDots: $('.gifts-section__dots--mobile')
   });
 });
