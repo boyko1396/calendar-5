@@ -41,10 +41,10 @@ $(document).ready(function() {
       if (afterIndex == 3) {
         $('.header').addClass('header--theme-white');
       };
-      if (afterIndex == 5) {
+      if (afterIndex == 6) {
         $('.header').addClass('header--theme-white');
       };
-      if (afterIndex == 6) {
+      if (afterIndex == 7) {
         $('.header').addClass('header--theme-white');
       };
     },
@@ -55,10 +55,10 @@ $(document).ready(function() {
       if (index == 3) {
         $('.header').removeClass('header--theme-white');
       };
-      if (index == 5) {
+      if (index == 6) {
         $('.header').removeClass('header--theme-white');
       };
-      if (index == 6) {
+      if (index == 7) {
         $('.header').removeClass('header--theme-white');
       };
     }
